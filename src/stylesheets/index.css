@@ -1,0 +1,177 @@
+@font-face {
+    font-family: 'Pretendard';
+    src: url('../fonts/Pretendard-Thin.woff2') format('truetype');
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('../fonts/Pretendard-ExtraLight.woff2') format('truetype');
+    font-weight: 200;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('../fonts/Pretendard-Light.woff2') format('truetype');
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('../fonts/Pretendard-Regular.woff2') format('truetype');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('../fonts/Pretendard-Medium.woff2') format('truetype');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('../fonts/Pretendard-SemiBold.woff2') format('truetype');
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('../fonts/Pretendard-Bold.woff2') format('truetype');
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('../fonts/Pretendard-ExtraBold.woff2') format('truetype');
+    font-weight: 800;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('../fonts/Pretendard-Black.woff2') format('truetype');
+    font-weight: 900;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Pretendard, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.container {
+    width: 100vw;
+    min-height: 100vh;
+}
+
+.fadein {
+    animation: fadein 0.5s;
+}
+
+.title-line {
+    height: 2px;
+    border: none;
+    width: 960px;
+    background: #8C95AF;
+    opacity: 0.2;
+    margin: 170px auto;
+    z-index: 1;
+    position: relative;
+}
+
+.loading {
+    height: 900px;
+    background: #E3E5EB;
+    width: 100%;
+}
+
+#dark-container {
+    background: #e3e5eb;
+}
+
+#jururu {
+    top: 230px;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    position: absolute;
+    z-index: 111;
+}
+
+#jururu > img {
+    width: 450px;
+}
+
+.alert-wrap {
+    position: fixed;
+    top: 30px;
+    width: 100%;
+    height: 60px;
+    text-align: center;
+    font-size: 18px;
+    z-index: 10003;
+    font-weight: 600;
+}
+
+.alert {
+    width: 300px;
+    padding: 10px 0;
+    margin: 0 auto;
+    background: #E3E5EB;
+    border-radius: 30px;
+    user-select: none;
+    color: #080f34;
+    box-shadow: black 0 0 3px;
+}
+
+@media screen and (max-width: 1250px) {
+    #header {
+        margin-left: 30px !important;
+    }
+
+    .nav-item {
+        margin-right: 30px !important;
+    }
+
+    .bar-right {
+        margin-left: 600px !important;
+    }
+}
+
+@media screen and (max-width: 1050px){
+    #header, #sample-border {
+        display: none !important;
+    }
+
+    #burger-btn {
+        display: inline !important;
+    }
+
+    #description-text, #title-text, .btn-wrapper {
+        margin-left: 10px;
+    }
+
+    .view-all {
+        margin-top: -90px;
+        margin-left: 89% !important;
+    }
+
+    body {
+        overflow: scroll !important;
+    }
+}

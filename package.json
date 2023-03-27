@@ -1,0 +1,51 @@
+{
+  "name": "billbodu",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@testing-library/jest-dom": "^5.16.4",
+    "@testing-library/react": "^13.2.0",
+    "@testing-library/user-event": "^13.5.0",
+    "apexcharts": "^3.35.3",
+    "axios": "^0.27.2",
+    "http-proxy-middleware": "^2.0.6",
+    "query-string": "^7.1.1",
+    "react": "^18.1.0",
+    "react-apexcharts": "^1.4.0",
+    "react-dom": "^18.1.0",
+    "react-intersection-observer": "^9.2.1",
+    "react-router-dom": "^6.2.2",
+    "react-scripts": "5.0.1",
+    "react-subtitles": "^0.1.3",
+    "react-transition-group": "^4.4.5",
+    "styled-components": "^5.3.5",
+    "web-vitals": "^2.1.4",
+    "react-youtube": "^10.0.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "set \\\"GENERATE_SOURCEMAP=false\\\" && react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      "> 1%",
+      "last 2 versions",
+      "not ie <= 10",
+      "last 5 safari version",
+      "ios >= 15.5"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
